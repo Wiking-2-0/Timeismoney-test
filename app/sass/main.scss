@@ -1,0 +1,19 @@
+body{
+	padding-top: 102px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	@media screen and ($tablet) {
+		padding-top: 102px;
+	}
+	@media screen and ($mobile){
+		padding-top: 56px;
+	}
+}
+.container{
+	width: 81.25vw;
+	max-width: 1170px;
+	padding: 0 10px;
+	margin: 0 auto;
+}

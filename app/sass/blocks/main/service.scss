@@ -1,0 +1,93 @@
+.service{
+	background-color: #f1f1f1;
+	padding-top: 118px;
+	padding-bottom: 100px;
+	.container{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		@media screen and ($tablet){
+			justify-content: center;
+			-webkit-flex-wrap: wrap;
+			-moz-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			-o-flex-wrap: wrap;
+			flex-wrap: wrap;
+		}
+	}
+}
+.plans{
+	width: 25vw;
+	max-width: 370px;
+	border: 1px solid #ecf0f1;
+	margin-bottom: 30px;
+	@media screen and ($tablet){
+		width: 370px;
+	}
+	ul{
+		@include reset-list;
+		li{
+			text-align: center;
+			width: 100%;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		.plans-title{
+			height: 75px;
+			color: #ffffff;
+			background-color: #485460;
+			font-size: 26px;
+			line-height: 32px;
+			padding-top: 20px;
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+		}
+		.plans-price{
+			height: 68px;
+			color: #485460;
+			background-color: #f8f9fb;
+			font-size: 20px;
+			line-height: 32px;
+			padding-top: 18px;
+		}
+		.plans-buy{
+			height: 98px;
+			background-color: #f8f9fb;
+			padding-top: 29px;
+			.plan-btn{
+				width: 170px;
+				height: 40px;
+				color: #ffffff;
+				background-color: #788492;
+				border: 0 none;
+				border-radius: 3px;
+				text-decoration: none;
+				padding: 0;
+				&:hover{
+					background-color: $active-color;
+				}
+			}
+		}
+	}
+}
+
+.plans-info{
+	.plan-info-items{
+		&:first-child{
+			border-top: 1px solid #ecf0f1;
+		}
+	}
+	.plan-info-item{
+		height: 46px;
+		color: #8c9299;
+		background-color: #ffffff;
+		font-size: 14px;
+		line-height: 32px;
+		padding-top: 5px;
+		border-bottom: 1px solid #ecf0f1;
+	}
+}
