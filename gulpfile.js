@@ -53,7 +53,7 @@ gulp.task('img', function(){
 	.pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('watch', ['browser-sync','sass','scripts'], function(){
+gulp.task('watch', ['browser-sync','css-libs','scripts'], function(){
 	gulp.watch('app/sass/**/*.scss', ['sass'])
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
